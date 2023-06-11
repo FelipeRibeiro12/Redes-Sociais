@@ -1,14 +1,14 @@
 public class Main{
     public static void main(String[] args){
 
-        final RedeSocial[] redeSocial = new RedeSocial[2];
-        final RedeSocial redesSociais1 = new Facebook("FelipeSenhaFb", 0);
-        final RedeSocial redesSociais2 = new Instagram("FelipeSenhaIg", 141);
+        final RedeSocial[] RS = new RedeSocial[2];
+        final RedeSocial rede1 = new Facebook("FelipeSenhaFb", 0);
+        final RedeSocial rede2 = new Instagram("FelipeSenhaIg", 141);
 
-        redeSocial[0] = redesSociais1;
-        redeSocial[1] = redesSociais2;
+        RS[0] = rede1;
+        RS[1] = rede2;
 
-        final Usuario user1 = new Usuario("Felipe", "feliperibeiro@gmail.com", redeSocial);
+        final Usuario user1 = new Usuario("Felipe", "feliperibeiro@gmail.com", RS);
 
         try {
             user1.mostraInfoRedeSocial();
